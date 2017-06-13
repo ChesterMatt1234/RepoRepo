@@ -4,17 +4,11 @@
 
 <p>Site under maintenance</p>
 
-
+var x = 0;
+var y = 1;
 
 <p id="demo"></p>
-<h2>What Can JavaScript Do?</h2>
-
-<p id="demo">JavaScript can change the style of an HTML element.</p>
-
-<button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Click Me!</button>
-
-
-
+ 
 <script>
 var x = document.getElementById("demo");
 
@@ -31,6 +25,8 @@ function showPosition(position) {
     "<br>Longitude: " + position.coords.longitude;
 }
 getLocation();
+var x = position.coords.latitude;
+var y = position.coords.longitude;   
 
 </script>
 
